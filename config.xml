@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "de.gamemodeon"
+	version		= "0.0">
+	<preference name="phonegap-version" value="3.3.0" />
+
+	<name>GameModeOn</name>
+	<description>
+		Die echte, originale, hoch gelobte GMO App! Besucht uns auch auf www.gamemodeon.de
+	</description>
+	<author href="http://lubiland.de/" email="lub@gamemodeon.de">
+		lub
+	</author>
+	
+	<icon src="images/icon.png" />
+	
+	<preference name="permissions" value="none" />
+	<feature name="http://api.phonegap.com/1.0/network" />
+	<feature name="http://api.phonegap.com/1.0/notification" />
+	<feature name="http://api.phonegap.com/1.0/camera" />
+
+	<access origin="http://gamemodeon.de" />
+
+	<gap:platform name="android" />
+</widget>
