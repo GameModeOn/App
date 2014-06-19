@@ -6,7 +6,7 @@
 	version		= "0.0">
 	<preference name="phonegap-version" value="3.4.0" />
 
-	<name>GameModeOn</name>
+	<name>GameModeON</name>
 	<description>
 		Die echte, originale, hoch gelobte GMO App! Besucht uns auch auf www.gamemodeon.de
 	</description>
