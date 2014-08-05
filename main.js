@@ -2,11 +2,13 @@ api = 'http://gamemodeon.de/app/1/';
 
 
 // EVENTS
-document.addEventListener('deviceready', deviceready, true);
-$('#btnLogin').click(login);
+document.addEventListener('deviceready', function(){
+	$('#btnLogin').click(login);
+	init;
+}, true);
 
 
-function deviceready() {
+function init() {
 	if(window.localStorage.getItem('autologin') == 'true') {
 		var user = window.localStorage.getItem('user');
 		var passwd = window.localStorage.getItem('passwd');
