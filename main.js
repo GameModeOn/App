@@ -2,10 +2,8 @@ api = 'http://gamemodeon.de/app/1/';
 
 
 // EVENTS
-document.addEventListener('deviceready', function(){
-	$('#btnLogin').click(login);
-	init;
-}, true);
+document.addEventListener('deviceready', init, true);
+$('#btnLogin').click(login);
 
 
 function init() {
