@@ -15,7 +15,7 @@ function deviceready() {
         $('#login').show();
     }
     $('#output').show();
-#    output();
+//    output();
     $('#main').show();
 }
 
