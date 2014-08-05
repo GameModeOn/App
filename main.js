@@ -6,6 +6,20 @@ document.addEventListener('deviceready', deviceready, true);
 $('#btnLogin').click(login);
 
 
+function deviceready() {
+    if(window.localStorage.getItem('autologin') == 'true') {
+        var user = window.localStorage.getItem('user');
+        var passwd = window.localStorage.getItem('passwd');
+        login(user, passwd);
+    } else {
+        $('#login').show();
+    }
+    $('#output').show();
+#    output();
+    $('#main').show();
+}
+
+
 function login(user, passwd) {
     user = user || $('[name="user"]').val();
     passwd = passwd || $('[name="passwd"]').val();
