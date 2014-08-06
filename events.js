@@ -12,3 +12,7 @@ $('#btnLogout').click(logout);
 
 //menu.js
 $('.btnMenu').click(togglemenu);
+
+
+//intent.js
+window.plugins.webintent.getExtra(WebIntent.EXTRA_TEXT, intent1(url), intent2)

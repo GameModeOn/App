@@ -18,12 +18,11 @@
 	
 	<preference name="permissions" value="none" />
 	<feature name="http://api.phonegap.com/1.0/network" />
-<!--	<feature name="http://api.phonegap.com/1.0/notification" />
-	<feature name="http://api.phonegap.com/1.0/camera" />-->
+<!--	<feature name="http://api.phonegap.com/1.0/notification" /> -->
 	
-	<!--<gap:plugin name="uk.co.ibcomputing.phonegapbuild.plugins.receivesendintents">
-		<param name="LAUNCHMODE" value="GMO Shoutbox" />
-	</gap:plugin>-->
+	<gap:plugin name="uk.co.ibcomputing.phonegapbuild.plugins.receivesendintents">
+		<param name="LAUNCHMODE" value="singleTop" />
+	</gap:plugin>
 	<gap:plugin name="net.tunts.webintent" />
 	<gap:plugin name="com.synconset.imagepicker" />
 	
