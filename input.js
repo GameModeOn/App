@@ -1,6 +1,8 @@
 function input(msg) {
+	alert(msg);
 	$('#btnShout').val('..loading..');
 	$.post(api+'input.php', { sid: sid, msg: msg }).done(function(data) {
+		alert(data);
 		if(data == 'true') {
 			$('#msg').val('');
 			$('#btnShout').val('SHOUT');
