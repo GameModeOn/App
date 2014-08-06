@@ -37,5 +37,5 @@ function logout() {
 	$('#input').hide();
 	$('#login').show();
 	$('#btnLogout').hide();
-	closemenu();
+	togglemenu();
 }
