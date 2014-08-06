@@ -3,7 +3,6 @@ function login(user, passwd) {
 	
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
 		if(data != '') {
-			alert('success');
 			sid = data;
 			
 			$('#login').hide();
