@@ -11,4 +11,4 @@ $('#btnLogout').click(logout);
 
 
 //menu.js
-$('#btnMenu').click(togglemenu);
+$('.btnMenu').click(togglemenu);
