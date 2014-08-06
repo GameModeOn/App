@@ -1,8 +1,8 @@
 //main.js
 document.addEventListener('deviceready', init, true);
 
-$('[name="user"]').click(cleardefaultcontent);
-$('[name="passwd"]').click(cleardefaultcontent);
+$('#user').click(cleardefaultcontent);
+$('#passwd').click(cleardefaultcontent);
 
 
 //login.js
