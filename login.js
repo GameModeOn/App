@@ -15,6 +15,7 @@ function login(user, passwd) {
 				savelogin(user, passwd);
 			}
 		} else {
+			alert('del dis');
 			window.localStorage.removeItem('autologin');
 			$('#errLogin').show();
 		}
