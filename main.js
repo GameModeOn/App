@@ -13,6 +13,7 @@ function init() {
 	$('#output').show();
 //	output();
 	$('#main').show();
+	navigator.splashscreen.hide();
 }
 
 function cleardefaultcontent() {
