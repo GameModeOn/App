@@ -13,7 +13,6 @@ function init() {
 	$('#output').show();
 //	output();
 	$('#main').show();
-	$('body').css('background-image', 'url()');
 }
 
 function cleardefaultcontent() {
