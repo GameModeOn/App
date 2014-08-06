@@ -1,6 +1,6 @@
-function login(user, passwd) {
-	user = user || $('[name="user"]').val();
-	passwd = passwd || $('[name="passwd"]').val();
+function login() {
+	user = $('[name="user"]').val();
+	passwd = $('[name="passwd"]').val();
 	alert(user+' '+passwd)
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
 		alert(data);
