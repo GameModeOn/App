@@ -1,7 +1,7 @@
 function login() {
 	user = $('[name="user"]').val();
 	passwd = $('[name="passwd"]').val();
-	alert(user+' '+passwd)
+	$('#btnLogin').val('..loading..');
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
 		alert(data);
 		if(data != '') {
@@ -15,6 +15,7 @@ function login() {
 		} else {
 			$('#errLogin').show();
 		}
+		$('#btnLogin').val('Login');
 	});
 }
 
