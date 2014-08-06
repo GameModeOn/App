@@ -7,3 +7,8 @@ $('[name="passwd"]').click(cleardefaultcontent);
 
 //login.js
 $('#btnLogin').click(login);
+$('#btnLogout').click(logout);
+
+
+//menu.js
+$('#btnMenu').click(togglemenu);
