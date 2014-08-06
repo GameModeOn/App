@@ -1,11 +1,7 @@
 function login(user, passwd) {
-	alert(user+passwd);
-	
-	
 	$('#btnLogin').val('..loading..');
 	
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
-		alert('Login: '+data);
 		if(data != '') {
 			alert('success');
 			sid = data;
@@ -18,11 +14,12 @@ function login(user, passwd) {
 				savelogin(user, passwd);
 			}
 		} else {
-			alert('del dis');
 			window.localStorage.removeItem('autologin');
 			$('#errLogin').show();
 		}
 		
+		$('[name="user"]').val('');
+		$('[name="passwd"]').val('');
 		$('#btnLogin').val('Login');
 	});
 }
