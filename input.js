@@ -4,7 +4,8 @@ function input(msg) {
 		if(data == 'true') {
 			$('#msg').val('');
 			$('#btnShout').val('SHOUT');
+		} else {
+			$('#btnShout').val(errmsg);
 		}
-		$('#btnShout').val(errmsg);
 	});
 }
