@@ -19,10 +19,4 @@ $('.btnMenu').click(togglemenu);
 
 
 //intent.js
-window.plugins.webintent.getExtra(WebIntent.EXTRA_TEXT, 
-	function(url) {
-		alert('intent1-'+url);
-	}, function() {
-		alert('intent2');
-	}
-);
+window.plugins.webintent.onNewIntent(function(url) { alert('intent-'+url); });
