@@ -20,7 +20,12 @@
 	<feature name="http://api.phonegap.com/1.0/network" />
 <!--	<feature name="http://api.phonegap.com/1.0/notification" />
 	<feature name="http://api.phonegap.com/1.0/camera" />-->
-
+	
+	<gap:plugin name="uk.co.ibcomputing.phonegapbuild.plugins.receivesendintents">
+		<param name="GMO Shoutbox" value="" />
+	</gap:plugin>
+	<gap:plugin name="net.tunts.webintent" />
+	
 	<access origin="http://gamemodeon.de" />
 
 	<gap:platform name="android" />
