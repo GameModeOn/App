@@ -1,6 +1,4 @@
 function login(user, passwd) {
-	passwd = passwd;
-	
 	$('#btnLogin').val('..loading..');
 	
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
@@ -16,6 +14,7 @@ function login(user, passwd) {
 				savelogin(user, passwd);
 			}
 		} else {
+			window.localStorage.removeItem('autologin');
 			$('#errLogin').show();
 		}
 		
