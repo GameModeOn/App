@@ -1,6 +1,5 @@
 function login(user, passwd) {
-	user = user || $('[name="user"]').val();
-	passwd = passwd || $('[name="passwd"]').val();
+	passwd = passwd;
 	
 	$('#btnLogin').val('..loading..');
 	
