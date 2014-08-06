@@ -13,14 +13,12 @@ function login(user, passwd) {
 			if($('[name="savelogin"]').prop('checked')) {
 				savelogin(user, passwd);
 			}
+			$('[name="user"]').val('');
+			$('[name="passwd"]').val('');
 		} else {
 			window.localStorage.removeItem('autologin');
-			$('#errLogin').show();
+			$('#btnLogin').val('Error! Retry?');
 		}
-		
-		$('[name="user"]').val('');
-		$('[name="passwd"]').val('');
-		$('#btnLogin').val('Login');
 	});
 }
 
