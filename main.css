@@ -3,6 +3,7 @@ body {
     color: #AAAAAA;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size: 0.9em;
+    background-image: url(images/splash.png);
 }
 
 /* FORMULAR */
