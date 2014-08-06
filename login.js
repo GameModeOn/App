@@ -16,7 +16,7 @@ function login(user, passwd) {
 			$('#passwd').val('');
 		} else {
 			window.localStorage.removeItem('autologin');
-			$('#btnLogin').val('Error! Retry?');
+			$('#btnLogin').val(errmsg);
 		}
 	});
 }

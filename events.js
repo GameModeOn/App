@@ -10,6 +10,10 @@ $('#btnLogin').click(function() { login($('[name="user"]').val(), $('[name="pass
 $('#btnLogout').click(logout);
 
 
+//input.js
+$('#input').click(function() { input($('#msg').val()); }
+
+
 //menu.js
 $('.btnMenu').click(togglemenu);
 
