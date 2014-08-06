@@ -9,11 +9,11 @@ function login(user, passwd) {
 			$('#input').show();
 			$('#btnLogout').show();
 			
-			if($('[name="savelogin"]').prop('checked')) {
+			if($('#savelogin').prop('checked')) {
 				savelogin(user, passwd);
 			}
-			$('[name="user"]').val('');
-			$('[name="passwd"]').val('');
+			$('#user').val('');
+			$('#passwd').val('');
 		} else {
 			window.localStorage.removeItem('autologin');
 			$('#btnLogin').val('Error! Retry?');
