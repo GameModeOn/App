@@ -21,9 +21,9 @@
 <!--	<feature name="http://api.phonegap.com/1.0/notification" />
 	<feature name="http://api.phonegap.com/1.0/camera" />-->
 	
-	<gap:plugin name="uk.co.ibcomputing.phonegapbuild.plugins.receivesendintents">
+	<!--<gap:plugin name="uk.co.ibcomputing.phonegapbuild.plugins.receivesendintents">
 		<param name="LAUNCHMODE" value="GMO Shoutbox" />
-	</gap:plugin>
+	</gap:plugin>-->
 	<gap:plugin name="net.tunts.webintent" />
 	<gap:plugin name="com.synconset.imagepicker" />
 	
