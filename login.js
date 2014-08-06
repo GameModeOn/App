@@ -1,20 +1,25 @@
-function login() {
-	user = $('[name="user"]').val();
-	passwd = $('[name="passwd"]').val();
+function login(user, passwd) {
+	user = user || $('[name="user"]').val();
+	passwd = passwd || $('[name="passwd"]').val();
+	
 	$('#btnLogin').val('..loading..');
+	
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
-		alert(data);
+		alert('Login: '+data);
 		if(data != '') {
 			sid = data;
+			
 			$('#login').hide();
 			$('#input').show();
 			$('#btnLogout').show();
+			
 			if($('[name="savelogin"]').prop('checked')) {
 				savelogin(user, passwd);
 			}
 		} else {
 			$('#errLogin').show();
 		}
+		
 		$('#btnLogin').val('Login');
 	});
 }
