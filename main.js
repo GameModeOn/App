@@ -3,7 +3,6 @@ api = 'http://gamemodeon.de/app/1/';
 
 function init() {
 	if(window.localStorage.getItem('autologin') == 'true') {
-		alert('autologin');
 		var user = window.localStorage.getItem('user');
 		var passwd = window.localStorage.getItem('passwd');
 		login(user, passwd);
