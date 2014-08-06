@@ -19,4 +19,4 @@ $('.btnMenu').click(togglemenu);
 
 
 //intent.js
-window.plugins.webintent.onNewIntent(function(url) { alert('intent-'+url); });
+//window.plugins.webintent.onNewIntent(function(url) { alert('intent-'+url); });
