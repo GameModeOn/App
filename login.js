@@ -1,8 +1,3 @@
-alert('hi');
-alert(api);
-
-
-$('#btnLogin').click(login);
 function login(user, passwd) {
 	user = user || $('[name="user"]').val();
 	passwd = passwd || $('[name="passwd"]').val();
