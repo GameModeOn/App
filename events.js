@@ -11,7 +11,7 @@ $('#btnLogout').click(logout);
 
 
 //input.js
-$('#input').click(function() { input($('#msg').val()); });
+$('#btnShout').click(function() { input($('#msg').val()); });
 
 
 //menu.js
