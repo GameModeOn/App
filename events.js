@@ -7,6 +7,7 @@ $('[name="passwd"]').click(cleardefaultcontent);
 
 //login.js
 //$('#btnLogin').click(login($('[name="user"]').val(), $('[name="passwd"]').val()));
+$('#btnLogin').click(login());
 $('#btnLogout').click(logout);
 
 
