@@ -10,8 +10,6 @@ function init() {
 	} else {
 		$('#login').show();
 	}
-	$('#output').show();
-//	output();
 	$('#main').show();
 }
 
