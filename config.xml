@@ -25,7 +25,7 @@
 	<gap:plugin name="net.tunts.webintent" />
 	<gap:plugin name="org.apache.cordova.camera" />
 	
-	<access origin="http://gamemodeon.de/app/" />
+	<access origin="http://gamemodeon.de/" />
 
 	<gap:platform name="android" />
 </widget>
