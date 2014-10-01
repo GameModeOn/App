@@ -4,7 +4,7 @@
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "de.gamemodeon.app"
 	version		= "0.0">
-	<preference name="phonegap-version" value="3.4.0" />
+	<preference name="phonegap-version" value="3.5.0" />
 
 	<name>GameModeON</name>
 	<description>
