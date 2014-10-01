@@ -3,7 +3,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "de.gamemodeon.app"
-	version		= "0.0.1">
+	version		= "0.1">
 	<preference name="phonegap-version" value="3.5.0" />
 
 	<name>GameModeON</name>
@@ -25,7 +25,7 @@
 	<gap:plugin name="net.tunts.webintent" />
 	<gap:plugin name="org.apache.cordova.camera" />
 	
-	<access origin="http://gamemodeon.de/" />
+	<access origin="http://gamemodeon.de" />
 
 	<gap:platform name="android" />
 </widget>
