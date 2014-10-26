@@ -23,6 +23,7 @@
 		<param name="LAUNCHMODE" value="singleTop" />
 	</gap:plugin>
 	<gap:plugin name="net.tunts.webintent" />
+	<gap:plugin name="com.phoengap.plugins.pushplugin" />
 	<gap:plugin name="org.apache.cordova.camera" />
 	
 	<access origin="http://gamemodeon.de" />
