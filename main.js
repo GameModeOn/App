@@ -1,4 +1,4 @@
-api = 'http://gamemodeon.de/app/1/';
+api = 'http://gamemodeon.de/app/2/';
 errmsg = 'Error! Retry?';
 
 
