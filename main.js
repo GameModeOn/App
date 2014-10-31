@@ -11,6 +11,7 @@ function init() {
 		$('#login').show();
 	}
 	$('#main').show();
+	getIntent();
 }
 
 function cleardefaultcontent() {
