@@ -4,7 +4,6 @@ errmsg = 'Error! Retry?';
 
 function init() {
 	pushNotification = window.plugins.pushNotification;
-	pushNotification.register(successHandler, errorHandler, {"senderID":"541842502965","ecb":"onPush"});
 	if(window.localStorage.getItem('autologin') == 'true') {
 		var user = window.localStorage.getItem('user');
 		var passwd = window.localStorage.getItem('passwd');
