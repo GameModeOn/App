@@ -1,10 +1,7 @@
 function pickimage() {
-	alert('btnImage');
 	window.imagePicker.getPictures(
 		function(results) {
-			for(var img in results) {
-				alert(img);
-			}
+			alert(results);
 		}, function(error) {
 			alert(error);
 		}, {
