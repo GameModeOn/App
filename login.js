@@ -1,5 +1,5 @@
 function login(user, passwd) {
-	$('#btnLogin').val('..loading..');
+	spinnerplugin.show();
 	
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
 		if(data != '') {
@@ -19,6 +19,7 @@ function login(user, passwd) {
 			window.localStorage.removeItem('autologin');
 			$('#btnLogin').val(errmsg);
 		}
+		spinnerplugin.hide();
 	});
 }
 

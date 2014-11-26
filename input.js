@@ -1,5 +1,6 @@
 function input(msg) {
-	$('#btnShout').val('..loading..');
+	spinnerplugin.show();
+	
 	$.post(api+'input.php', { sid: sid, msg: msg }).done(function(data) {
 		if(data == 'true') {
 			$('#msg').val('');
@@ -7,5 +8,6 @@ function input(msg) {
 		} else {
 			$('#btnShout').val(errmsg);
 		}
+		spinnerplugin.hide();
 	});
 }

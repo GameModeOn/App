@@ -11,7 +11,7 @@ function init() {
 		$('#login').show();
 	}
 	$('#main').show();
-	window.plugins.webintent.getExtra(WebIntent.EXTRA_TEXT, 
+/*	window.plugins.webintent.getExtra(WebIntent.EXTRA_TEXT, 
 		function(url) {
 			//alert(url);
 			// url is the value of EXTRA_TEXT
@@ -19,7 +19,7 @@ function init() {
 			alert("no extra");
 			// There was no extra supplied.
 		}
-	);
+	);*/
 }
 
 function cleardefaultcontent() {
