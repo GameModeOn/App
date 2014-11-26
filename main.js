@@ -11,9 +11,15 @@ function init() {
 		$('#login').show();
 	}
 	$('#main').show();
-
-	window.plugins.webintent.getExtra(window.plugins.webintent.EXTRA_TEXT, function(url) { alert(url); }, function() { alert("no extra") });
-	//getIntent();
+	window.plugins.webintent.getExtra(WebIntent.EXTRA_TEXT, 
+		function(url) {
+			alert(url);
+			// url is the value of EXTRA_TEXT
+		}, function() {
+			alert("no extra");
+			// There was no extra supplied.
+		}
+	);
 }
 
 function cleardefaultcontent() {
