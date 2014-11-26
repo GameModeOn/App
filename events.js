@@ -16,6 +16,7 @@ $('#btnShout').click(function() { input($('#msg').val()); });
 
 //menu.js
 $('.btnMenu').click(togglemenu);
+$('.btnImage').click(pickimage);
 
 
 //intent.js
