@@ -25,6 +25,7 @@
 	<gap:plugin name="net.tunts.webintent" />-->
 	<gap:plugin name="org.apache.cordova.camera" />
 	<gap:plugin name="it.mobimentum.phonegapspinnerplugin" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	
 	<access origin="https://gamemodeon.de" />
 
