@@ -10,6 +10,13 @@ function init() {
 	} else {
 		$('#login').show();
 	}
+	
+	window.plugins.webintent.getExtra(window.plugins.webintent.EXTRA_TEXT, function (url) {
+		alert(url);
+	}, function() { //Fail
+		alert("error");
+	});
+
 	$('#main').show();
 }
 
