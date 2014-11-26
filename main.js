@@ -12,7 +12,7 @@ function init() {
 	}
 	$('#main').show();
 
-	window.plugins.webintent.getUri(function(url) { alert(url); });
+	window.plugins.webintent.getExtra(window.plugins.webintent.EXTRA_TEXT, function(url) { alert(url); }, function() { alert("no extra") });
 	//getIntent();
 }
 
