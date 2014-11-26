@@ -19,10 +19,8 @@
 	<preference name="permissions" value="none" />
 	<feature name="http://api.phonegap.com/1.0/network" />
 	
-	<gap:plugin name="org.apache.cordova.camera" />
 	<gap:plugin name="it.mobimentum.phonegapspinnerplugin" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	<gap:plugin name="org.apache.cordova.dialogs" />
 	<gap:plugin name="org.apache.cordova.file-transfer" />
 	<gap:plugin name="org.apache.cordova.file" />
 	

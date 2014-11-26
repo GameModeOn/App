@@ -11,7 +11,6 @@ function init() {
 		$('#login').show();
 	}
 	$('#main').show();
-	navigator.notification.alert('quark', function() { });
 }
 
 function cleardefaultcontent() {
