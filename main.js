@@ -11,7 +11,9 @@ function init() {
 		$('#login').show();
 	}
 	$('#main').show();
-	getIntent();
+
+	window.plugins.webintent.getUri(function(url) { alert(url); }
+	//getIntent();
 }
 
 function cleardefaultcontent() {
