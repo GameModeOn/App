@@ -13,7 +13,7 @@ function init() {
 	$('#main').show();
 	window.plugins.webintent.getExtra(WebIntent.EXTRA_TEXT, 
 		function(url) {
-			alert(url);
+			//alert(url);
 			// url is the value of EXTRA_TEXT
 		}, function() {
 			alert("no extra");
