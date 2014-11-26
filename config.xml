@@ -19,10 +19,6 @@
 	<preference name="permissions" value="none" />
 	<feature name="http://api.phonegap.com/1.0/network" />
 	
-	<gap:plugin name="uk.co.ibcomputing.phonegapbuild.plugins.receivesendintents">
-		<param name="LAUNCHMODE" value="singleTop" />
-	</gap:plugin>
-	<gap:plugin name="net.tunts.webintent" />
 	<gap:plugin name="it.mobimentum.phonegapspinnerplugin" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	<gap:plugin name="org.apache.cordova.file-transfer" />
