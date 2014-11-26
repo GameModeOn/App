@@ -1,4 +1,4 @@
-funciton pickimage() {
+function pickimage() {
 	alert('btnImage');
 	window.imagePicker.getPictures(
 		function(results) {
