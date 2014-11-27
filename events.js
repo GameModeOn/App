@@ -18,4 +18,4 @@ $('#btnShout').click(function() { input($('#msg').val()); });
 $('.btnMenu').click(togglemenu);
 
 //imageshare.js
-//$('#btnImage').change(upload);
+$('.btnImage').click(upload);

@@ -1,6 +1,10 @@
 function upload() {
-/*	var file = document.getElementById('fileToUpload').files[0];
+	var file = file.entry.fullPath
 	alert(file);
+	
+	var ft = new FileTransfer();
+	ft.onprogress = function(progress) { alert(progress.loaded+' / '+progress.total); };
+	ft.upload(file, encodeURI('https://mediacru.sh/api/upload/file'), function(success) { alert(success); }, function(error) { alert(error); });
 /*	spinnerplugin.show();
 	MediaCrush.upload(file, function(media) {
 		media.wait(function() {
@@ -9,5 +13,4 @@ function upload() {
 			alert(media.url);
 		});
 	});*/
-	alert('test');
 }
