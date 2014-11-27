@@ -15,9 +15,9 @@ function uploadimage(file) {
 	MediaCrush.upload(file, function(media) {
 		spinnerplugin.show();
 		media.wait(function() {
+			spinnerplugin.hide();
 			alert(media.status);
 			alert(media.url);
-			spinnerplugin.hide();
 		});
 	});
 }
