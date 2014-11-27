@@ -10,10 +10,11 @@ function pickimage() {
 	);
 }
 
-function uploadimage(fileURL) {
+function uploadimage(file) {
 //	spinnerplugin.show();
+	alert(file);
 	var ft = new FileTransfer();
 	ft.onprogress = function(progress) { alert(progress.loaded+' / '+progress.total); };
-	ft.upload(fileURL, encodeURI('https://mediacru.sh/api/upload/file'), function(success) { alert(success); }, function(error) { alert(error); });
+	ft.upload(file, encodeURI('https://mediacru.sh/api/upload/file'), function(success) { alert(success); }, function(error) { alert(error); });
 //	spinnerplugin.hide();
 }
