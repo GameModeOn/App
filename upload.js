@@ -1,5 +1,5 @@
 function upload() {
-	var file = document.getElementById('fileToUpload').files[0];
+/*	var file = document.getElementById('fileToUpload').files[0];
 	alert(file);
 /*	spinnerplugin.show();
 	MediaCrush.upload(file, function(media) {
@@ -9,4 +9,5 @@ function upload() {
 			alert(media.url);
 		});
 	});*/
+	alert('test');
 }
