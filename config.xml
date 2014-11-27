@@ -21,7 +21,6 @@
 	
 	<gap:plugin name="it.mobimentum.phonegapspinnerplugin" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	<gap:plugin name="com.synconset.imagepicker" />
 	
 	<access origin="https://gamemodeon.de" />
 	<access origin="https://mediacru.sh" />
