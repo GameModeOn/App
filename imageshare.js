@@ -12,8 +12,8 @@ function pickimage() {
 
 function uploadimage(file) {
 	alert(file);
+	spinnerplugin.show();
 	MediaCrush.upload(file, function(media) {
-		spinnerplugin.show();
 		media.wait(function() {
 			spinnerplugin.hide();
 			alert(media.status);
