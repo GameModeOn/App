@@ -24,8 +24,8 @@
 	<gap:plugin name="org.apache.cordova.file-transfer" />
 	<gap:plugin name="com.synconset.imagepicker" />
 	
-	<access origin="https://gamemodeon.de" />
 	<access origin="https://mediacru.sh" />
+	<access origin="https://gamemodeon.de" />
 
 	<gap:platform name="android" />
 </widget>
