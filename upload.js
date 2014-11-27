@@ -1,5 +1,10 @@
 function selectupload() {
-	navigator.camera.getPicture(upload, function(message) { alert('error: '+message); });
+	navigator.camera.getPicture(upload,
+		function(message) {
+			alert('error: '+message);
+		}, {
+			sourceType : 0
+		});
 }
 
 function upload(file) {
