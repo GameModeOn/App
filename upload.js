@@ -1,5 +1,5 @@
 function upload() {
-	var file = file.entry.fullPath
+	var file = file.entry.fullPath;
 	alert(file);
 	
 	var ft = new FileTransfer();
