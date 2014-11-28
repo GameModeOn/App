@@ -26,7 +26,6 @@
 	<gap:plugin name="org.apache.cordova.camera" />
 	
 	<access origin="https://gamemodeon.de" />
-	<access origin="https://mediacru.sh" />
 	
 	<gap:platform name="android" />
 </widget>
