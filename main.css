@@ -22,31 +22,30 @@ input[type=submit] {
 
 /* DIV */
 div {
-	display: none;
+/*	display: none;*/
 }
 
 /* BUTTONS */
-.btnImage {
+.button {
 	position: fixed;
 	bottom: 10px;
-	left: 10px;
 	width: 30px;
+	height: 35px;
 	padding-left: 4px;
 	padding-right: 4px;
 	background-color: #202020;
 	border-radius: 5px;
 	display: block;
 }
+.btnImage {
+	left: 10px;
+	text-align: center;
+}
+.btnImage img {
+	padding-top: 8px;
+}
 .btnMenu {
-	position: fixed;
-	bottom: 10px;
 	right: 10px;
-	width: 30px;
-	padding-left: 4px;
-	padding-right: 4px;
-	background-color: #202020;
-	border-radius: 5px;
-	display: block;
 }
 
 /* MENU */
