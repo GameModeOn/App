@@ -1,8 +1,13 @@
 function selectupload() {
-	navigator.camera.getPicture(upload,
-		function(e) {
-			alert('error: '+e);
-		}, {
+	navigator.camera.getPicture(
+		function(file) {
+			spinnerplugin.show();
+			upload(file);
+		},
+		function() {
+			alert('ERROR!');
+		},
+		{
 			sourceType : 0
 		}
 	);
@@ -18,7 +23,5 @@ function upload(file) {
 
 	var ft = new FileTransfer();
 
-	spinnerplugin.show();
 	ft.upload(file, uri, function(r) { input('https://gamemodeon.de/app/uploads/'+r.response); }, function() { alert('ERROR!'); }, options);
-	spinnerplugin.hide();
 }
