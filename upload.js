@@ -23,5 +23,5 @@ function upload(file) {
 
 	var ft = new FileTransfer();
 
-	ft.upload(file, uri, function(r) { input('https://gamemodeon.de/app/uploads/'+r.response); }, function() { alert('ERROR!'); }, options);
+	ft.upload(file, uri, function(r) { input('[url=\'https://gamemodeon.de/app/uploads/'+r.response+'\']MobileUpload[/url]'); }, function() { alert('ERROR!'); }, options);
 }
