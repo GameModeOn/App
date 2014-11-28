@@ -12,7 +12,8 @@ function upload(file) {
 	alert('file: '+file);
 	var ft = new FileTransfer();
 	ft.onprogress = function(progress) { alert(progress.loaded+' / '+progress.total); };
-	ft.upload(file, encodeURI('https://mediacru.sh/api/upload/file'), function(success) { alert('success: '+success.hash); }, function(error) { alert('error: '+erro); });
+	ft.upload(file, encodeURI(api+'upload.php'), function(success) { alert('success: '+success.hash); }, function(error) { alert('error: '+erro); });
+/*	ft.upload(file, encodeURI('https://mediacru.sh/api/upload/file'), function(success) { alert('success: '+success.hash); }, function(error) { alert('error: '+erro); });
 	
 /*	spinnerplugin.show();
 	MediaCrush.upload(file, function(media) {
