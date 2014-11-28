@@ -19,6 +19,6 @@ function upload(file) {
 	var ft = new FileTransfer();
 
 	spinnerplugin.show;
-	ft.upload(file, uri, void, function() { alert('ERROR!'); }, params);
+	ft.upload(file, uri, function(success) { alert('success: '+success); }, function() { alert('ERROR!'); }, params);
 	spinnerplugin.hide;
 }
