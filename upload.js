@@ -19,6 +19,6 @@ function upload(file) {
 	var ft = new FileTransfer();
 
 	spinnerplugin.show;
-	ft.upload(file, uri, function(success) { alert('success: '+success.response); }, function() { alert('ERROR!'); }, options);
+	ft.upload(file, uri, function(r) { input('https://gamemodeon.de/app/uploads/'+r.response); }, function() { alert('ERROR!'); }, options);
 	spinnerplugin.hide;
 }
