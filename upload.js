@@ -9,8 +9,16 @@ function selectupload() {
 }
 
 function upload(file) {
-	alert('file: '+file);
+	var uri = encodeURI(api+'upload.php');
+
+	var options = new FileUploadOptions();
+	var params = {};
+	params.sid = sid;
+	options.params = params;
+
 	var ft = new FileTransfer();
-	ft.onprogress = function(progress) { alert(progress.loaded+' / '+progress.total); };
-	ft.upload(file, encodeURI(api+'upload.php'), function(success) { alert('success: '+success.hash); }, function(error) { alert('error: '+erro); });
+
+	spinnerplugin.show;
+	ft.upload(file, uri, void, function() { alert('ERROR!'); }, params);
+	spinnerplugin.hide;
 }
