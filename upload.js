@@ -5,7 +5,7 @@ function selectupload() {
 			upload(file);
 		},
 		function() {
-			alert('ERROR!');
+			navigator.notification.alert('Selection failed!');
 		},
 		{
 			sourceType : 0
@@ -27,7 +27,7 @@ function upload(file) {
 		file,
 		uri,
 		describeupload,
-		navigator.notification.alert('ERROR!'),
+		navigator.notification.alert('Upload failed!'),
 		options
 	);
 }
