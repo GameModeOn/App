@@ -39,7 +39,7 @@ function describeupload(r) {
 	
 	navigator.notification.prompt(
 		'Beschreibung',
-		submitupload
+		submitupload,
 		'Upload',
 		['SHOUT', 'test'],
 		'MobileUpload'
