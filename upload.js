@@ -32,7 +32,7 @@ function upload(file) {
 	);
 }
 
-function describeupload(r) {
+/*function describeupload(r) {
 	hash = r.response;
 	
 	navigator.notification.prompt(
@@ -50,4 +50,4 @@ function submitupload(d) {
 	
 	$('#msg').val(msg);
 	input(msg);
-}
+}*/
