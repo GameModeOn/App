@@ -46,10 +46,10 @@ function describeupload(r) {
 	);
 }
 
-/*function submitupload(d) {
+function submitupload(d) {
 	var description = d.input1;
-	var msg = '[upload=\''+hash'\']'+description+'[/upload]';
+	var msg = '[upload=\''+hash+'\']'+description+'[/upload]';
 	
 	$('#msg').val(msg);
 	input(msg);
-}*/
+}
