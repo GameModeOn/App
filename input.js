@@ -4,9 +4,8 @@ function input(msg) {
 	$.post(api+'input.php', { sid: sid, msg: msg }).done(function(data) {
 		if(data == 'true') {
 			$('#msg').val('');
-			$('#btnShout').val('SHOUT');
 		} else {
-			$('#btnShout').val(errmsg);
+			navigator.notification.alert('Shouting failed!');
 		}
 		spinnerplugin.hide();
 	});
