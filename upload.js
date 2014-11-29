@@ -32,8 +32,10 @@ function upload(file) {
 	);
 }
 
-/*function describeupload(r) {
+function describeupload(r) {
 	hash = r.response;
+	
+	spinnerplugin.hide();
 	
 	navigator.notification.prompt(
 		'Beschreibung',
@@ -44,7 +46,7 @@ function upload(file) {
 	);
 }
 
-function submitupload(d) {
+/*function submitupload(d) {
 	var description = d.input1;
 	var msg = '[upload=\''+hash'\']'+description+'[/upload]';
 	
