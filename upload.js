@@ -38,10 +38,10 @@ function describeupload(r) {
 	spinnerplugin.hide();
 	
 	navigator.notification.prompt(
-		'Beschreibung',
+		'Gib deinem Upload einen Titel:',
 		submitupload,
 		'Upload',
-		'SHOUT',
+		['SHOUT'],
 		'MobileUpload'
 	);
 }
