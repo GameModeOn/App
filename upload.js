@@ -27,7 +27,7 @@ function upload(file) {
 		file,
 		uri,
 		describeupload,
-		alert('Upload failed!'),
+		function() { alert('Upload failed!') },
 		options
 	);
 }
