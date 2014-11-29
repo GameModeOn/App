@@ -26,7 +26,7 @@ function upload(file) {
 	ft.upload(
 		file,
 		uri,
-		submitupload,
+		describeupload,
 		navigator.notification.alert('ERROR!'),
 		options
 	);
@@ -37,15 +37,16 @@ function describeupload(r) {
 	
 	navigator.notification.prompt(
 		'Beschreibung',
-		submitupload(d, hash),
+		function(d) {
+			submitupload('[upload=\''+hash'\']'+d.input1+'[/upload]');
+		},
 		'Upload',
 		'SHOUT',
 		'MobileUpload'
 	);
 }
 
-function submitupload(d, hash) {
-	var msg = '[upload=\''+hash'\']'+d.input1+'[/upload]';
+function submitupload(msg) {
 	$('#msg').val(msg);
 	input(msg);
 }
