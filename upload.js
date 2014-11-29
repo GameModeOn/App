@@ -33,20 +33,21 @@ function upload(file) {
 }
 
 function describeupload(r) {
-	var hash = r.response;
+	hash = r.response;
 	
 	navigator.notification.prompt(
 		'Beschreibung',
-		function(d) {
-			submitupload('[upload=\''+hash'\']'+d.input1+'[/upload]');
-		},
+		submitupload
 		'Upload',
 		['SHOUT', 'test'],
 		'MobileUpload'
 	);
 }
 
-/*function submitupload(msg) {
+function submitupload(d) {
+	var description = d.input1;
+	var msg = '[upload=\''+hash'\']'+description+'[/upload]';
+	
 	$('#msg').val(msg);
 	input(msg);
-}*/
+}
