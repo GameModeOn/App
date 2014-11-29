@@ -41,7 +41,7 @@ function describeupload(r) {
 			submitupload('[upload=\''+hash'\']'+d.input1+'[/upload]');
 		},
 		'Upload',
-		['SHOUT'],
+		['SHOUT', 'test'],
 		'MobileUpload'
 	);
 }
