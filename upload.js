@@ -27,12 +27,13 @@ function upload(file) {
 		file,
 		uri,
 		describeupload,
-		navigator.notification.alert('Upload failed!'),
+		alert('Upload failed!'),
 		options
 	);
 }
 
 function describeupload(r) {
+	spinnerplugin.hide();
 	alert(r.response);
 }
 
