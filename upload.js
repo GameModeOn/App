@@ -27,7 +27,7 @@ function upload(file) {
 		file,
 		uri,
 		submitupload,
-		navigator.notification.alert('ERROR!'); },
+		navigator.notification.alert('ERROR!'),
 		options
 	);
 }
