@@ -41,7 +41,7 @@ function describeupload(r) {
 		'Beschreibung',
 		submitupload,
 		'Upload',
-		['SHOUT', 'test'],
+		'SHOUT',
 		'MobileUpload'
 	);
 }
