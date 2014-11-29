@@ -27,17 +27,12 @@ function upload(file) {
 		file,
 		uri,
 		describeupload,
-		function() { alert('Upload failed!') },
+		function() { navigator.notification.alert('Upload failed!') },
 		options
 	);
 }
 
 function describeupload(r) {
-	spinnerplugin.hide();
-	alert(r.response);
-}
-
-/*function describeupload(r) {
 	var hash = r.response;
 	
 	navigator.notification.prompt(
@@ -51,7 +46,7 @@ function describeupload(r) {
 	);
 }
 
-function submitupload(msg) {
+/*function submitupload(msg) {
 	$('#msg').val(msg);
 	input(msg);
 }*/
