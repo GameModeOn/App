@@ -5,7 +5,7 @@ function selectupload() {
 			upload(file);
 		},
 		function() {
-			navigator.notification.alert('Selection failed!');
+			window.plugins.toast.showLongBottom('Selection failed!');
 		},
 		{
 			sourceType : 0
@@ -27,7 +27,7 @@ function upload(file) {
 		file,
 		uri,
 		describeupload,
-		function() { navigator.notification.alert('Upload failed!') },
+		function() { window.plugins.toast.showLongBottom('Upload failed!') },
 		options
 	);
 }

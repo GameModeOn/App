@@ -17,7 +17,7 @@ function login(user, passwd) {
 			$('#passwd').val('');
 		} else {
 			window.localStorage.removeItem('autologin');
-			$('#btnLogin').val(errmsg);
+			window.plugins.toast.showLongBottom('Login failed!');
 		}
 		spinnerplugin.hide();
 	});

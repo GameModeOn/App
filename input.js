@@ -5,7 +5,7 @@ function input(msg) {
 		if(data == 'true') {
 			$('#msg').val('');
 		} else {
-			navigator.notification.alert('Shouting failed!');
+			window.plugins.toast.showLongBottom('Shouting failed!');
 		}
 		spinnerplugin.hide();
 	});
