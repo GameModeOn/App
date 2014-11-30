@@ -8,7 +8,9 @@ function selectupload() {
 			window.plugins.toast.showLongBottom('Selection failed!');
 		},
 		{
-			sourceType : 0
+			sourceType : 0,
+			targetWidth: 1920,
+			targetHieght: 1920
 		}
 	);
 }
