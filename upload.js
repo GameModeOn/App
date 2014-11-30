@@ -10,7 +10,7 @@ function selectupload() {
 		{
 			sourceType : 0,
 			targetWidth: 1920,
-			targetHieght: 1920
+			targetHeight: 1920
 		}
 	);
 }
