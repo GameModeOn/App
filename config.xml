@@ -29,4 +29,5 @@
 	<access origin="https://gamemodeon.de" />
 	
 	<gap:platform name="android" />
+	<gap:platform name="winphone" />
 </widget>
