@@ -3,10 +3,11 @@ function output() {
 		var regex = new RegExp('<!--(.*?)-->');
 		var regex = regex.exec(data);
 		if(window.localStorage.getItem('lastOutputMD5') != regex[1]) {
+			spinnerplugin.show();
 			window.localStorage.setItem('lastOutputMD5', regex[1]);
 			window.localStorage.setItem('lastOutput', data);
 			$('#output').html(data);
-			window.plugins.toast.showLongBottom('new content');
+			spinnerplugin.hide();
 		}
 	});
 	setTimeout('output()', 3000);
