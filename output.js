@@ -4,7 +4,7 @@ function output() {
 		var regex = new RegExp('<!--(.*)-->');
 		var regex = regex.exec(data);
 		alert('regex[1]'+regex[1]);
-		if(windows.localStorage.getItem('lastOutputMD5') != regex[1]) {
+		if(window.localStorage.getItem('lastOutputMD5') != regex[1]) {
 			window.localStorage.setItem('lastOutputMD5', regex[1]);
 			window.localStorage.setItem('lastOutput', data);
 			$('#output').html(data);
