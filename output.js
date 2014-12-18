@@ -1,10 +1,10 @@
 function output() {
-	$.post(api+'output.php', { sid: sid, md5ob: window.localStorage.getItem('lastOutputMD5') }).done(function(data) {
+	spinnerplugin.hide();
+	$.post(api+'output.php', { sid: sid, md5ob: window.localStorage.getItem('lastOutput') }).done(function(data) {
 		var regex = new RegExp('<!--(.*?)-->');
 		var regex = regex.exec(data);
-		if(window.localStorage.getItem('lastOutputMD5') != regex[1]) {
-			window.localStorage.setItem('lastOutputMD5', regex[1]);
-			window.localStorage.setItem('lastOutput', data);
+		if(window.localStorage.getItem('lastOutput') != regex[1]) {
+			window.localStorage.setItem('lastOutput', regex[1]);
 			$('#output').html(data);
 		}
 	});

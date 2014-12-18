@@ -4,7 +4,6 @@ function login(user, passwd) {
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
 		if(data != '') {
 			sid = data;
-			$('#output').html(window.localStorage.getItem('lastOutput'));
 			output();
 			
 			$('#login').hide();
@@ -20,7 +19,6 @@ function login(user, passwd) {
 			window.localStorage.removeItem('autologin');
 			window.plugins.toast.showLongBottom('Login failed!');
 		}
-		spinnerplugin.hide();
 	});
 }
 
