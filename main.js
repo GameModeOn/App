@@ -3,6 +3,8 @@ errmsg = 'Error! Retry?';
 
 
 function init() {
+	window.localStorage.removeItem('lastOutput');
+	
 	if(window.localStorage.getItem('autologin') == 'true') {
 		var user = window.localStorage.getItem('user');
 		var passwd = window.localStorage.getItem('passwd');
