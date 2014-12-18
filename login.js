@@ -19,6 +19,7 @@ function login(user, passwd) {
 			window.localStorage.removeItem('autologin');
 			window.plugins.toast.showLongBottom('Login failed!');
 		}
+		spinnerplugin.hide();
 	});
 }
 

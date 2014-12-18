@@ -1,5 +1,4 @@
 function output() {
-	spinnerplugin.hide();
 	$.post(api+'output.php', { sid: sid, md5ob: window.localStorage.getItem('lastOutput') }).done(function(data) {
 		var regex = new RegExp('<!--(.*?)-->');
 		var regex = regex.exec(data);
