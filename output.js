@@ -4,7 +4,6 @@ function output(md5) {
 		var regex = regex.exec(data);
 		if(md5 != regex[1]) {
 			md5 = regex[1];
-			alert('set '+md5);
 			$('#output').html(data);
 		}
 		/*alert(window.localStorage.getItem('interval'));
