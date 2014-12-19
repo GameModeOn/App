@@ -1,6 +1,5 @@
 api = 'https://gamemodeon.de/app/1/';
 errmsg = 'Error! Retry?';
-md5 = 'null';
 
 
 function init() {
