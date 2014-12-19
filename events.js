@@ -1,4 +1,4 @@
-/*$('#interval').input(function() { interval($('#interval').val()); });*/
+$('#interval').input(function() { interval($('#interval').val()); });
 
 //main.js
 document.addEventListener('deviceready', init, true);
