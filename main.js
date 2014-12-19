@@ -17,7 +17,7 @@ function init() {
 		window.localStorage.setItem('interval', '1000');
 	}
 	$('#interval').val(window.localStorage.getItem('interval'));
-	$('#intervaltxt').html(window.localStorage.getItem('interval')/1000+' Sekunden Interval');
+	$('#intervaltxt').html(window.localStorage.getItem('interval')/1000);
 }
 
 function cleardefaultcontent() {
