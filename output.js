@@ -7,7 +7,7 @@ function output(md5) {
 			alert('set '+md5);
 			$('#output').html(data);
 		}
-		alert(window.localStorage.getItem('interval'));
-		setTimeout(output, window.localStorage.getItem('interval'), md5);
+		/*alert(window.localStorage.getItem('interval'));
+		setTimeout(output, window.localStorage.getItem('interval'), md5);*/
 	});
 }
