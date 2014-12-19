@@ -1,5 +1,3 @@
-/*$('#interval').input(function() { interval($('#interval').val()); });*/
-
 //main.js
 document.addEventListener('deviceready', init, true);
 
@@ -19,5 +17,8 @@ $('#btnShout').click(function() { input($('#msg').val()); });
 //menu.js
 $('.btnMenu').click(togglemenu);
 
-//imageshare.js
+//upload.js
 $('.btnImage').click(selectupload);
+
+//interval.js
+$('#interval').on('change', function() { interval($('#interval').val()); });
