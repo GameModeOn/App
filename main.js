@@ -10,7 +10,15 @@ function init() {
 	} else {
 		$('#login').show();
 	}
+	
 	$('#main').show();
+	
+	if(window.localStorage.getItem('interval') == 'null') {
+		alert('interval wasnt set');
+		window.localStorage.setItem('interval', '1000');
+	}
+	$('#interval').val(window.localStorage.getItem('interval');
+	$('#intervaltxt').html(window.localStorage.getItem('interval');
 }
 
 function cleardefaultcontent() {
