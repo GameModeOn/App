@@ -10,6 +10,7 @@ function output(md5) {
 			$('#output').html(data);
 		}
 	});
+	alert('after '+md5);
 	setTimeout(output, 1000, md5);
 	$('#output').show();
 }
