@@ -4,7 +4,7 @@ function login(user, passwd) {
 	$.post(api+'login.php', { user: user, passwd: passwd }).done(function(data) {
 		if(data != '') {
 			sid = data;
-			output();
+			output('null');
 			
 			$('#login').hide();
 			$('#input').show();
