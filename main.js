@@ -14,7 +14,7 @@ function init() {
 	$('#main').show();
 	
 	alert('initintervalval '+window.localStorage.getItem('interval'));
-	if(typeof window.localStorage.getItem('interval') == 'undefined') {
+	if(window.localStorage.getItem('interval') == null) {
 		alert('interval wasnt set');
 		window.localStorage.setItem('interval', '1000');
 	}
