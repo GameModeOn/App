@@ -6,7 +6,6 @@ function output(md5) {
 			md5 = regex[1];
 			$('#output').html(data);
 		}
-		alert(window.localStorage.getItem('interval'));
 		setTimeout(output, window.localStorage.getItem('interval'), md5);
 	});
 }
