@@ -10,14 +10,14 @@ function initMenu() {
 	$('#interval').val(window.localStorage.getItem('interval'));
 	$('#intervaltxt').html(window.localStorage.getItem('interval')/1000);
 
-/*	if(window.localStorage.getItem('eco') == null) {
+	if(window.localStorage.getItem('eco') == null) {
 		window.localStorage.setItem('eco', 'false');
 	}
 	if(window.localStorage.getItem('eco') == 'true') {
 		$('#eco').prop('checked') = 'true';
 	} else {
 		$('#eco').prop('checked') = 'false';
-	}*/
+	}
 }
 
 
