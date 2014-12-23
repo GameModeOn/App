@@ -23,8 +23,8 @@ function initMenu() {
 
 
 function interval(intervalval) {
-	window.localStorage.setItem('interval', intervalval);
-	$('#intervaltxt').html(intervalval/1000);
+/*	window.localStorage.setItem('interval', intervalval);
+	$('#intervaltxt').html(intervalval/1000);*/
 }
 
 function eco() {
