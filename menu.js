@@ -23,14 +23,14 @@ function initMenu() {
 
 
 function interval(intervalval) {
-/*	window.localStorage.setItem('interval', intervalval);
-	$('#intervaltxt').html(intervalval/1000);*/
+	window.localStorage.setItem('interval', intervalval);
+	$('#intervaltxt').html(intervalval/1000);
 }
 
 function eco() {
-/*	if($('#eco').prop('checked')) {
+	if($('#eco').prop('checked')) {
 		window.localStorage.setItem('eco', 'true');
 	} else {
 		window.localStorage.setItem('eco', 'false');
-	}*/
+	}
 }
