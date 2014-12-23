@@ -14,11 +14,11 @@ $('#btnLogout').click(logout);
 $('#btnShout').click(function() { input($('#msg').val()); });
 
 
-//menu.js
-$('.btnMenu').click(togglemenu);
-
 //upload.js
 $('.btnImage').click(selectupload);
 
-//interval.js
+
+//menu.js
+$('.btnMenu').click(togglemenu);
 $('#interval').on('change', function() { interval($('#interval').val()); });
+$('#eco').on('change', eco);
