@@ -14,9 +14,7 @@ function initMenu() {
 		window.localStorage.setItem('eco', 'false');
 	}
 	if(window.localStorage.getItem('eco') == 'true') {
-//		$('#eco').prop('checked', 'true');
-	} else {
-//		$('#eco').prop('checked', 'false');
+		$('#eco').prop('checked', 'true');
 	}
 }
 
