@@ -14,6 +14,7 @@ function init() {
 	initMenu();
 
 	$('#smileybox').load('smileybox.html');
+	$('.smileybox').click(insertsmiley);
 	
 	$('#main').show();
 }
