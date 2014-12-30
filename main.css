@@ -48,6 +48,13 @@ div {
 .btnImage img {
 	padding-top: 8px;
 }
+.btnSmileybox {
+	left: 65px;
+	text-align: center;
+}
+.btnSmileybox img {
+	padding-top: 6px;
+}
 .btnMenu {
 	right: 10px;
 }
@@ -56,7 +63,7 @@ div {
 #menu div, #input div {
 	display: block;
 }
-#btnLogout {
+#logout {
 	display: none;
 }
 

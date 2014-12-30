@@ -10,7 +10,7 @@ function login(user, passwd) {
 			
 			$('#login').hide();
 			$('#input').show();
-			$('#btnLogout').show();
+			$('#logout').show();
 			
 			if($('#savelogin').prop('checked')) {
 				savelogin(user, passwd);
@@ -37,6 +37,6 @@ function logout() {
 	window.localStorage.removeItem('autologin');
 	$('#input').hide();
 	$('#login').show();
-	$('#btnLogout').hide();
+	$('#logout').hide();
 	togglemenu();
 }

@@ -6,12 +6,12 @@ $('#passwd').click(cleardefaultcontent);
 
 
 //login.js
-$('#btnLogin').click(function() { login($('#user').val(), $('#passwd').val()); });
-$('#btnLogout').click(logout);
+$('#login').click(function() { login($('#user').val(), $('#passwd').val()); });
+$('#logout').click(logout);
 
 
 //input.js
-$('#btnShout').click(function() { input($('#msg').val()); });
+$('#shout').click(function() { input($('#msg').val()); });
 
 
 //upload.js
