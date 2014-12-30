@@ -18,7 +18,7 @@ $('#shout').click(function() { input($('#msg').val()); });
 $('.btnImage').click(selectupload);
 
 //smileybox.js
-$('.btnSmileybox').click($('#smileybox').toggle());
+$('.btnSmileybox').click(function() { $('#smileybox').toggle(); });
 
 //menu.js
 $('.btnMenu').click(togglemenu);

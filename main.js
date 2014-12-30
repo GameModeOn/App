@@ -13,8 +13,7 @@ function init() {
 	
 	initMenu();
 	
-//	$('#smileybox').load('smileybox.html');
-	$('#smileybox').hide();
+	$('#smileybox').load('smileybox.html');
 	
 	$('#main').show();
 }
