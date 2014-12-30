@@ -1,5 +1,3 @@
-$('#smileybox').load('smileybox.html');
-
 function insertsmiley() {
 	alert(this);
 /*	var newmsg = $('#msg').val()+' '+$(this).attr('alt');
