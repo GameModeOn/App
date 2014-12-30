@@ -13,6 +13,9 @@ function init() {
 	
 	initMenu();
 	
+//	$('#smileybox').load('smileybox.html');
+	$('#smileybox').hide();
+	
 	$('#main').show();
 }
 
