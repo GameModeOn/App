@@ -17,6 +17,8 @@ $('#shout').click(function() { input($('#msg').val()); });
 //upload.js
 $('.btnImage').click(selectupload);
 
+//smileybox.js
+$('.btnSmileybox').click($('#smileybox').toggle());
 
 //menu.js
 $('.btnMenu').click(togglemenu);
