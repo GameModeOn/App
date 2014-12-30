@@ -19,7 +19,6 @@ $('.btnImage').click(selectupload);
 
 //smileybox.js
 $('.btnSmileybox').click(function() { $('#smileybox').toggle(); });
-// $('.smileybox').click(insertsmiley); -> main.js
 
 //menu.js
 $('.btnMenu').click(togglemenu);
