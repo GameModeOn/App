@@ -16,6 +16,8 @@ function initMenu() {
 	if(window.localStorage.getItem('eco') == 'true') {
 		$('#eco').prop('checked', 'true');
 	}
+
+	$('#smileybox').load('smileybox.html');
 }
 
 
