@@ -28,10 +28,10 @@ function initPushwoosh() {
 	);
 }
 
-document.addEventListener('push-notification', function(event) {
+/*document.addEventListener('push-notification', function(event) {
 	var title = event.notification.title;
 	var userData = event.notification.userdata;
 
 	console.warn('user data: ' + JSON.stringify(userData));
 	alert(title);
-});
+});*/
