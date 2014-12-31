@@ -1,7 +1,7 @@
 function initPushwoosh() {
 	var pushNotification = window.plugins.pushNotification;
 	
-	//set push notifications handler
+/*	//set push notifications handler
 	document.addEventListener('push-notification', function(event) {
 		var title = event.notification.title;
 		var userData = event.notification.userdata;
@@ -11,7 +11,7 @@ function initPushwoosh() {
 		}
 		
 		alert(title);
-	});
+	});*/
 	
 	//initialize Pushwoosh with projectid: GOOGLE_PROJECT_ID, appid : PUSHWOOSH_APP_ID. This will trigger all pending push notifications on start.
 	pushNotification.onDeviceReady({ projectid: '17831485163', appid : '1D863-3883F' });
@@ -27,11 +27,3 @@ function initPushwoosh() {
 		}
 	);
 }
-
-/*document.addEventListener('push-notification', function(event) {
-	var title = event.notification.title;
-	var userData = event.notification.userdata;
-
-	console.warn('user data: ' + JSON.stringify(userData));
-	alert(title);
-});*/
