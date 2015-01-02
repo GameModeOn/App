@@ -12,11 +12,11 @@ function init() {
 	}
 	
 	initMenu();
-
+	
 	$('#smileybox').load('smileybox.html');
 	
 	$('#main').show();
-
+	
 	initPushwoosh();
 }
 

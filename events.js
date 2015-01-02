@@ -22,5 +22,6 @@ $('.btnSmileybox').click(function() { $('#smileybox').toggle(); });
 
 //menu.js
 $('.btnMenu').click(togglemenu);
-$('#interval').on('change', function() { interval($('#interval').val()); });
+$('#interval').on('change', interval);
 $('#eco').on('change', eco);
+$('#push').on('change', push);

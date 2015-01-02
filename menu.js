@@ -16,13 +16,17 @@ function initMenu() {
 	if(window.localStorage.getItem('eco') == 'true') {
 		$('#eco').prop('checked', 'true');
 	}
+
+	if(window.localStorage.getItem('push') == null) {
+		window.localStorage.setItem('push', 'true');
+	}
 }
 
 
 
 function interval(intervalval) {
-	window.localStorage.setItem('interval', intervalval);
-	$('#intervaltxt').html(intervalval/1000);
+	window.localStorage.setItem('interval', $('#interval').val());
+	$('#intervaltxt').html($('#interval').val()/1000);
 }
 
 function eco() {
@@ -30,5 +34,13 @@ function eco() {
 		window.localStorage.setItem('eco', 'true');
 	} else {
 		window.localStorage.setItem('eco', 'false');
+	}
+}
+
+function push() {
+	if($('#push').prop('checked')) {
+		window.localStorage.setItem('push', 'true');
+	} else {
+		window.localStorage.setItem('push', 'false');
 	}
 }
