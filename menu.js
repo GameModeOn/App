@@ -20,6 +20,9 @@ function initMenu() {
 	if(window.localStorage.getItem('push') == null) {
 		window.localStorage.setItem('push', 'true');
 	}
+	if(window.localStorage.getItem('push') == 'true') {
+		$('#push').prop('checked', 'true');
+	}
 }
 
 
@@ -43,4 +46,5 @@ function push() {
 	} else {
 		window.localStorage.setItem('push', 'false');
 	}
+	initPushwoosh();
 }
