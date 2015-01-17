@@ -3,7 +3,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "de.gamemodeon.app"
-	version		= "0.5.1">
+	version		= "0.5.2">
 	<preference name="phonegap-version" value="3.6.3" />
 
 	<name>GameModeON</name>
