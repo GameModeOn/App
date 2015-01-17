@@ -76,3 +76,6 @@ a:link, a:visited, a:hover, a:active {
 	color: #AAAAAA;
 	text-decoration: underline;
 }
+#output {
+	padding-bottom: 40px;
+}
