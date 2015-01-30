@@ -19,10 +19,10 @@ input[type=submit] {
 	border-radius: 5px;
 	font-weight: bold;
 }
-input[type=checkbox] {
-	width: 10px;
-	height: 10px;
-}
+/*input[type=checkbox] {
+	width: auto;
+	height: auto;
+}*/
 
 /* DIV */
 div {
