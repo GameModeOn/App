@@ -20,8 +20,8 @@ input[type=submit] {
 	font-weight: bold;
 }
 input[type=checkbox] {
-	width: auto;
-	height: auto;
+	width: 10px;
+	height: 10px;
 }
 
 /* DIV */
