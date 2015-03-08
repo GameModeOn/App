@@ -3,14 +3,14 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "de.gamemodeon.app"
-	version		= "0.5.4">
+	version		= "0.5.5">
 	<preference name="phonegap-version" value="3.6.3" />
 
 	<name>GameModeON</name>
 	<description>
 		Die echte, originale, hoch gelobte GMO App! Besucht uns auch auf www.gamemodeon.de
 	</description>
-	<author href="http://gamemodeon.de/forum/User/1/" email="lub@gamemodeon.de">
+	<author href="https://gamemodeon.de/user/1-lub/" email="lub@gamemodeon.de">
 		lub
 	</author>
 	
