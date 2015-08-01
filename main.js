@@ -1,4 +1,4 @@
-api = 'https://gamemodeon.de/gmo/app/2/';
+api = 'https://gamemodeon.de/gmo/app/3/';
 errmsg = 'Error! Retry?';
 
 
